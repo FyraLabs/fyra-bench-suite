@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>fyra</Title>
+    <Version>1.0.0</Version>
+    <TestType>System</TestType>
+    <Description>Kernel Test</Description>
+    <Maintainer>Cappy Ishihara</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/portal-1.1.2</Test>
+    <Arguments>-w 1920 -h 1080</Arguments>
+    <Description>Resolution: 1920 x 1080</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/sysbench-1.1.0</Test>
+    <Arguments>cpu run</Arguments>
+    <Description>Test: CPU</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/sysbench-1.1.0</Test>
+    <Arguments>memory run</Arguments>
+    <Description>Test: RAM / Memory</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/hackbench-1.0.0</Test>
+    <Arguments>8 process</Arguments>
+    <Description>Count: 8 - Type: Process</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/hackbench-1.0.0</Test>
+    <Arguments>8 thread</Arguments>
+    <Description>Count: 8 - Type: Thread</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/git-1.1.0</Test>
+    <Description>Time To Complete Common Git Commands</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/unpack-linux-1.2.0</Test>
+    <Description>linux-5.19.tar.xz</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/sqlite-2.2.0</Test>
+    <Arguments>8</Arguments>
+    <Description>Threads / Copies: 8</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/sqlite-speedtest-1.0.1</Test>
+    <Description>Timed Time - Size 1,000</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/blogbench-1.1.0</Test>
+    <Arguments>READ</Arguments>
+    <Description>Test: Read</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/blogbench-1.1.0</Test>
+    <Arguments>WRITE</Arguments>
+    <Description>Test: Write</Description>
+  </Execute>
+</PhoronixTestSuite>
