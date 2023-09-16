@@ -62,7 +62,9 @@ set -l rpm_packages \
     fish \
     wget \
     git \
-    curl
+    curl \
+    ninja \
+    fio
 
 
 function check_rpm
