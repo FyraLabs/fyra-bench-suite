@@ -9,11 +9,6 @@
     <Maintainer>Cappy Ishihara</Maintainer>
   </SuiteInformation>
   <Execute>
-    <Test>pts/portal-1.1.2</Test>
-    <Arguments>-w 1920 -h 1080</Arguments>
-    <Description>Resolution: 1920 x 1080</Description>
-  </Execute>
-  <Execute>
     <Test>pts/sysbench-1.1.0</Test>
     <Arguments>cpu run</Arguments>
     <Description>Test: CPU</Description>
@@ -26,12 +21,7 @@
   <Execute>
     <Test>pts/hackbench-1.0.0</Test>
     <Arguments>8 process</Arguments>
-    <Description>Count: 8 - Type: Process</Description>
-  </Execute>
-  <Execute>
-    <Test>pts/hackbench-1.0.0</Test>
-    <Arguments>8 thread</Arguments>
-    <Description>Count: 8 - Type: Thread</Description>
+    <Description>Count: 1 - Type: Process</Description>
   </Execute>
   <Execute>
     <Test>pts/git-1.1.0</Test>

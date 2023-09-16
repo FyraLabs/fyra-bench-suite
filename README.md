@@ -7,11 +7,9 @@ This fish script is a benchmark suite for Linux systems. It is created for bench
 You need to have the following programs installed:
 
 - `fish`
-- `sysbench`
-- `php-cli`
-- `php-fpm`
 - Steam
   - Portal
+  - Half-Life 2: Lost Coast
 - `gcc`
 - `make`
 - `cmake`

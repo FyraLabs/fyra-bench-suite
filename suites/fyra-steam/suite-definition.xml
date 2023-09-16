@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>Fyra Steam</Title>
+    <Version>1.0.0</Version>
+    <TestType>Graphics</TestType>
+    <Description>Fyra Extras - Steam Games</Description>
+    <Maintainer>Cappy Ishihara</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/hl2lostcoast-1.1.0</Test>
+    <Arguments>-w 1920 -h 1080</Arguments>
+    <Description>Resolution: 1920 x 1080</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/portal-1.1.2</Test>
+    <Arguments>-w 1920 -h 1080</Arguments>
+    <Description>Resolution: 1920 x 1080</Description>
+  </Execute>
+</PhoronixTestSuite>

@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.4-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>Fyra Full</Title>
+    <Version>1.0.0</Version>
+    <TestType>Other</TestType>
+    <Description>Full Fyra Test</Description>
+    <Maintainer>Cappy Ishihara</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/compression</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/network</Test>
+  </Execute>
+  <Execute>
+    <Test>pts/vkmark-1.3.2</Test>
+    <Arguments>--size 1920x1080 -p mailbox</Arguments>
+    <Description>Resolution: 1920 x 1080 - Present Mode: Mailbox</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/vkmark-1.3.2</Test>
+    <Arguments>--size 1920x1080 -p immediate</Arguments>
+    <Description>Resolution: 1920 x 1080 - Present Mode: Immediate</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/blender-3.6.0</Test>
+    <Arguments>-b ../barbershop_interior_gpu.blend -o output.test -x 1 -F JPEG -f 1 -- --cycles-device CPU</Arguments>
+    <Description>Blend File: Barbershop - Compute: CPU-Only</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/blender-3.6.0</Test>
+    <Arguments>-b ../barbershop_interior_gpu.blend -o output.test -x 1 -F JPEG -f 1 -- --cycles-device CUDA</Arguments>
+    <Description>Blend File: Barbershop - Compute: NVIDIA CUDA</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/blender-3.6.0</Test>
+    <Arguments>-b ../barbershop_interior_gpu.blend -o output.test -x 1 -F JPEG -f 1 -- --cycles-device OPTIX</Arguments>
+    <Description>Blend File: Barbershop - Compute: NVIDIA OptiX</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/blender-3.6.0</Test>
+    <Arguments>-b ../barbershop_interior_gpu.blend -o output.test -x 1 -F JPEG -f 1 -- --cycles-device ONEAPI</Arguments>
+    <Description>Blend File: Barbershop - Compute: Intel oneAPI</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/memcached-1.2.0</Test>
+    <Arguments>--ratio=1:10</Arguments>
+    <Description>Set To Get Ratio: 1:10</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/memcached-1.2.0</Test>
+    <Arguments>--ratio=1:5</Arguments>
+    <Description>Set To Get Ratio: 1:5</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/memcached-1.2.0</Test>
+    <Arguments>--ratio=1:1</Arguments>
+    <Description>Set To Get Ratio: 1:1</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/memcached-1.2.0</Test>
+    <Arguments>--ratio=5:1</Arguments>
+    <Description>Set To Get Ratio: 5:1</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/unigine-valley-1.1.9</Test>
+    <Arguments>-video_width 1920 -video_height 1080 -video_fullscreen 1 -video_app opengl</Arguments>
+    <Description>Resolution: 1920 x 1080 - Mode: Fullscreen - Renderer: OpenGL</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/unigine-valley-1.1.9</Test>
+    <Arguments>-video_width 1920 -video_height 1080 -video_fullscreen 0 -video_app opengl</Arguments>
+    <Description>Resolution: 1920 x 1080 - Mode: Windowed - Renderer: OpenGL</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/xonotic-1.7.0</Test>
+    <Arguments>+vid_width 1920 +vid_height 1080 +exec effects-low.cfg</Arguments>
+    <Description>Resolution: 1920 x 1080 - Effects Quality: Low</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/xonotic-1.7.0</Test>
+    <Arguments>+vid_width 1920 +vid_height 1080 +exec effects-high.cfg</Arguments>
+    <Description>Resolution: 1920 x 1080 - Effects Quality: High</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/xonotic-1.7.0</Test>
+    <Arguments>+vid_width 1920 +vid_height 1080 +exec effects-ultra.cfg</Arguments>
+    <Description>Resolution: 1920 x 1080 - Effects Quality: Ultra</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/xonotic-1.7.0</Test>
+    <Arguments>+vid_width 1920 +vid_height 1080 +exec effects-ultimate.cfg</Arguments>
+    <Description>Resolution: 1920 x 1080 - Effects Quality: Ultimate</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>randread libaio 1 0 512k</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: Yes - Direct: No - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>randread libaio 1 1 512k</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: Yes - Direct: Yes - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>randread libaio 0 0 512k</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: No - Direct: No - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>randread libaio 0 1 512k</Arguments>
+    <Description>Type: Random Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>randwrite libaio 1 0 512k</Arguments>
+    <Description>Type: Random Write - IO Engine: Linux AIO - Buffered: Yes - Direct: No - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>randwrite libaio 1 1 512k</Arguments>
+    <Description>Type: Random Write - IO Engine: Linux AIO - Buffered: Yes - Direct: Yes - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>randwrite libaio 0 0 512k</Arguments>
+    <Description>Type: Random Write - IO Engine: Linux AIO - Buffered: No - Direct: No - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>randwrite libaio 0 1 512k</Arguments>
+    <Description>Type: Random Write - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>read libaio 1 0 512k</Arguments>
+    <Description>Type: Sequential Read - IO Engine: Linux AIO - Buffered: Yes - Direct: No - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>read libaio 1 1 512k</Arguments>
+    <Description>Type: Sequential Read - IO Engine: Linux AIO - Buffered: Yes - Direct: Yes - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>read libaio 0 0 512k</Arguments>
+    <Description>Type: Sequential Read - IO Engine: Linux AIO - Buffered: No - Direct: No - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>read libaio 0 1 512k</Arguments>
+    <Description>Type: Sequential Read - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>write libaio 1 0 512k</Arguments>
+    <Description>Type: Sequential Write - IO Engine: Linux AIO - Buffered: Yes - Direct: No - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>write libaio 1 1 512k</Arguments>
+    <Description>Type: Sequential Write - IO Engine: Linux AIO - Buffered: Yes - Direct: Yes - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>write libaio 0 0 512k</Arguments>
+    <Description>Type: Sequential Write - IO Engine: Linux AIO - Buffered: No - Direct: No - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>system/fio-1.9.5</Test>
+    <Arguments>write libaio 0 1 512k</Arguments>
+    <Description>Type: Sequential Write - IO Engine: Linux AIO - Buffered: No - Direct: Yes - Block Size: 512KB - Disk Target: Default Test Directory</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pmbench-1.0.2</Test>
+    <Arguments>-j 4 -r 80</Arguments>
+    <Description>Concurrent Worker Threads: 4 - Read-Write Ratio: 80% Reads 20% Writes</Description>
+  </Execute>
+</PhoronixTestSuite>
