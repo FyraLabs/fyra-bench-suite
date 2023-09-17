@@ -7,43 +7,7 @@
     <TestType>Other</TestType>
     <Description>Full Fyra Test</Description>
     <Maintainer>Cappy Ishihara</Maintainer>
-  </SuiteInformation>
-  <Execute>
-    <Test>pts/compression</Test>
-  </Execute>
-  <Execute>
-    <Test>pts/network</Test>
-  </Execute>
-  <Execute>
-    <Test>pts/vkmark-1.3.2</Test>
-    <Arguments>--size 1920x1080 -p mailbox</Arguments>
-    <Description>Resolution: 1920 x 1080 - Present Mode: Mailbox</Description>
-  </Execute>
-  <Execute>
-    <Test>pts/vkmark-1.3.2</Test>
-    <Arguments>--size 1920x1080 -p immediate</Arguments>
-    <Description>Resolution: 1920 x 1080 - Present Mode: Immediate</Description>
-  </Execute>
-  <Execute>
-    <Test>pts/blender-3.6.0</Test>
-    <Arguments>-b ../barbershop_interior_gpu.blend -o output.test -x 1 -F JPEG -f 1 -- --cycles-device CPU</Arguments>
-    <Description>Blend File: Barbershop - Compute: CPU-Only</Description>
-  </Execute>
-  <Execute>
-    <Test>pts/blender-3.6.0</Test>
-    <Arguments>-b ../barbershop_interior_gpu.blend -o output.test -x 1 -F JPEG -f 1 -- --cycles-device CUDA</Arguments>
-    <Description>Blend File: Barbershop - Compute: NVIDIA CUDA</Description>
-  </Execute>
-  <Execute>
-    <Test>pts/blender-3.6.0</Test>
-    <Arguments>-b ../barbershop_interior_gpu.blend -o output.test -x 1 -F JPEG -f 1 -- --cycles-device OPTIX</Arguments>
-    <Description>Blend File: Barbershop - Compute: NVIDIA OptiX</Description>
-  </Execute>
-  <Execute>
-    <Test>pts/blender-3.6.0</Test>
-    <Arguments>-b ../barbershop_interior_gpu.blend -o output.test -x 1 -F JPEG -f 1 -- --cycles-device ONEAPI</Arguments>
-    <Description>Blend File: Barbershop - Compute: Intel oneAPI</Description>
-  </Execute>
+    </SuiteInformation>
   <Execute>
     <Test>pts/memcached-1.2.0</Test>
     <Arguments>--ratio=1:10</Arguments>
@@ -119,7 +83,7 @@
     <Arguments>randwrite libaio 1 0 512k</Arguments>
     <Description>Type: Random Write - IO Engine: Linux AIO - Buffered: Yes - Direct: No - Block Size: 512KB - Disk Target: Default Test Directory</Description>
   </Execute>
-  <Execute>
+ <Execute>
     <Test>system/fio-1.9.5</Test>
     <Arguments>randwrite libaio 1 1 512k</Arguments>
     <Description>Type: Random Write - IO Engine: Linux AIO - Buffered: Yes - Direct: Yes - Block Size: 512KB - Disk Target: Default Test Directory</Description>
